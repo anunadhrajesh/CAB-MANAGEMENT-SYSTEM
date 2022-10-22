@@ -1,0 +1,81 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: aliceblue;
+    background-image: url("taxi3.jpg");
+   
+  }
+
+  h1{
+    margin-bottom: 30%;
+    color: #eee;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 20%;
+  }
+  
+  
+  .title {
+    color: #eee;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #08d;
+  }
+
+  .top{
+    margin-bottom: 20%;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    background: white; 
+    border: 1px solid grey; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px 3px grey; 
+    color: blue; 
+    outline: none; 
+    height:23px; 
+    width: 275px; 
+    margin-bottom: 6%;
+    font-family: sans-serif;
+  }
+
+  
+
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 2;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 22%;
+  }
+
+  a{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  
+ 
+  
