@@ -1,0 +1,57 @@
+.div {
+  border: 2px solid blue;
+  width: 200px;
+}
+
+textarea {
+  border: 1px solid red;
+}
+
+nav ul {
+  margin: 10;
+  padding: 10;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}/*# sourceMappingURL=cabhome.css.map */
+
+.btn{
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid white;
+  transition: width 2s height 3s line-height 3s ;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  color: white;
+}
+
+.btn:hover{
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  color: white;
+}
+
+@keyframes example
+{
+    from {background-color: brown;}
+    to {background-color: yellow;}
+}
+
+@keyframes example1
+{
+    0%{background-color: red;}
+    25%{background-color: blue;}
+    50%{background-color: yellow;}
+    100%{background-color: green;}
+}

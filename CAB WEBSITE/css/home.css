@@ -44,3 +44,94 @@ ul {
   form{
     color: black;
   }
+
+  .btn{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid black;
+    transition: width 2s height 3s line-height 3s ;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    margin-left:22%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.btn:hover{
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+}
+
+body{
+  background-image: url("taxihome.jpg");
+  color: aliceblue;
+  font-size: larger;
+}
+
+/*div{
+  border: 1px solid black;
+  height: 100px;
+}
+.container{
+  height: fit-content;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+.item{
+  width: 30%;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 24pt;
+  flex-grow: 0;
+}*/
+
+.left-div{
+  position: relative;
+  top: 10px;
+  left: 20px;
+  border: 1px solid black;
+  color: white;
+  width: 40%;
+  /* float: left; */
+  background-color: blue;
+  z-index: 3;
+  display: inline-block;
+}
+
+.left-div:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.right-div:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.right-div{
+  position: relative;
+  top: 10px;
+  left: 20px;
+  border: 1px solid black;
+  color: white;
+  width: 40%;
+  float: left;
+  z-index: 2;
+  background-color: green;
+}
+.container{
+  position: relative;
+  top: 50px;
+  left: 30px;
+  height: 100px;
+  width: 500px;
+ 
+}
+
+
