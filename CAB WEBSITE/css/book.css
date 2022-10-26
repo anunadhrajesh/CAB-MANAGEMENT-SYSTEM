@@ -127,3 +127,7 @@
 body{
     background-image: url('cab2.jpg');
 }
+
+nav{
+    position: fixed;
+}
