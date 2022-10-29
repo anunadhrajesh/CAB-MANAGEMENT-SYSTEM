@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src=""
+            height="15"
+            alt="CMS Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book.html">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+
+  
+        <!-- Notifications -->
+        <div class="dropdown">
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src=""
+              class="rounded-circle"
+              height="25"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+<br>
+
+<div class="one">
+    <h1>CAB MANAGEMENT SYSTEM</h1>
+  </div>
+
+
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="css/download.png"
+            class="img-fluid" alt="Sample image" style="margin-left: 13%;">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form>
+
+  
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form3Example3 fname" class="form-control form-control-lg"
+                placeholder="First Name" required />
+              <label class="form-label" for="form3Example3">First Name</label>
+            </div>
+
+            <div class="form-outline mb-4">
+                <input type="text" id="form3Example3 lname" class="form-control form-control-lg"
+                  placeholder="Last Name" required />
+                <label class="form-label" for="form3Example3">Last Name</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="email" id="form3Example3 email" class="form-control form-control-lg"
+                  placeholder="Enter a valid email address" minlength="5" maxlength="50" required/>
+                <label class="form-label" for="form3Example3">Email address</label>
+              </div>
+
+
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="form3Example4 password" class="form-control form-control-lg"
+                placeholder="Enter password" minlength="8" maxlength="25" required/>
+              <label class="form-label" for="form3Example4">Password</label>
+            </div>
+
+            <div class="form-outline mb-3">
+                <input type="cpassword" id="form3Example4 cpassword" class="form-control form-control-lg"
+                  placeholder="Confirm password" minlength="8" maxlength="25" required />
+                <label class="form-label" for="form3Example4">Confirm Password</label>
+              </div>
+
+              <div class="form-outline mb-3">
+                <input type="date" id="form3Example4" class="form-control form-control-lg"
+                  placeholder="Date of Birth" />
+                <label class="form-label" for="form3Example4">Date of Birth</label>
+              </div>
+
+              <div class="alert-danger" id="error-messages"></div>
+              <button type="submit" class="btn btn-warning col-md-12" onclick="return validate();">SignIn</button>
+            
+  
+            <div class="d-flex justify-content-between align-items-center">
+              
+                
+  
+          </form>
+        </div>
+      </div>
+    </div> 
+    </div>
+  </section>
+  <br>
+
+
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-muted">
+   
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>CMS Services
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Travel</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Booking</a>
+            </p>
+           
+          </div>
+          <!-- Grid column -->
+  
+       
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Kerala, Kochi, IN</p>
+
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="https://google.com/">CMS.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+<script>
+
+
+        function validate(e){
+        var email = document.forms['loginform']['email'];
+        var password = document.forms['loginform']['password'];
+        var cpassword = document.forms['loginform']['cpassword'];
+        var btn = document.getElementById('btn-login');
+        if(!email.validity.valid)
+      {
+          error.innerHTML = 'Please enter a valid email';
+          return false;
+      }
+      if(!password.validity.valid){
+          error.innerHTML = 'Please enter a valid password';
+          return false;
+      }
+      document.querySelectorAll('#loginform input').forEach(e=>{
+            e.addEventListener('keyup', function(event){
+                var isValid = true;
+                if(!email.validity.valid || !password.validity.valid){
+                    isValid = false;
+                }
+
+                if(password.value != cpassword.value){
+                    isValid = false;
+                    console.log('invalid password')
+                }
+
+                if(!isValid){
+                    btn.setAttribute('disabled', true)
+                }
+                else{
+                    btn.removeAttribute('disabled');
+                }
+            })
+        });
+            e.preventDefault();
+        }
+
+        
+        
+    </script>
+
+</body>
+</html>
