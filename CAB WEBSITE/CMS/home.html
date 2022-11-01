@@ -133,11 +133,14 @@
         </div>
         <div class="colm-form">
             <div class="form-container">
-                <input type="text" placeholder="PICK UP LOCATION">
-                <input type="text" placeholder="DROP LOCATION">
+              <form action="" onsubmit="validate(event)" id="srch">
+                <input type="search" name="pickup" id="pickup" placeholder="PICK UP LOCATION" required>
+                <input type="search" name="dest" id="dest" placeholder="DROP LOCATION" required>
                 <input type="date" placeholder="DATE">
                 <input type="time" placeholder="TIME">
+                <p id="error"></p>
                 <a href="hom.html"><button class="btn-login">BOOK NOW</button></a>
+                </form>
 
             </div>
             
@@ -241,6 +244,21 @@
   </footer>
   <!-- Footer -->
 
+  <script>
+    function validate(e)
+{
+    let pickup = document.forms["srch"]["pickup"];
+    let dest = document.forms["srch"]["dest"];
+    let error = document.getElementById("error");
+    if(pickup.value == dest.value)
+    {   e.preventDefault();
+        // alert("Same Location")
+        error.innerText = "Same Location"
+        error.style.color = "red";
+
+    }
+}
+  </script>
 
 
 

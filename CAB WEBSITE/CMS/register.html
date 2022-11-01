@@ -89,7 +89,7 @@
             aria-expanded="false"
           >
             <img
-              src=""
+              src="css/download.png"
               class="rounded-circle"
               height="25"
               alt="Black and White Portrait of a Man"
@@ -164,7 +164,7 @@
             </div>
 
             <div class="form-outline mb-3">
-                <input type="cpassword" id="form3Example4 cpassword" class="form-control form-control-lg"
+                <input type="password" id="form3Example4 cpassword" class="form-control form-control-lg"
                   placeholder="Confirm password" minlength="8" maxlength="25" required />
                 <label class="form-label" for="form3Example4">Confirm Password</label>
               </div>
@@ -176,7 +176,7 @@
               </div>
 
               <div class="alert-danger" id="error-messages"></div>
-              <button type="submit" class="btn btn-warning col-md-12" onclick="return validate();">SignIn</button>
+              <input type="button" class="btn btn-warning col-md-12" id="btnSubmit" value="Submit" onclick="return validate()">
             
   
             <div class="d-flex justify-content-between align-items-center">
@@ -255,50 +255,17 @@
   </footer>
   <!-- Footer -->
 
-
-<script>
-
-
-        function validate(e){
-        var email = document.forms['loginform']['email'];
-        var password = document.forms['loginform']['password'];
-        var cpassword = document.forms['loginform']['cpassword'];
-        var btn = document.getElementById('btn-login');
-        if(!email.validity.valid)
-      {
-          error.innerHTML = 'Please enter a valid email';
-          return false;
-      }
-      if(!password.validity.valid){
-          error.innerHTML = 'Please enter a valid password';
-          return false;
-      }
-      document.querySelectorAll('#loginform input').forEach(e=>{
-            e.addEventListener('keyup', function(event){
-                var isValid = true;
-                if(!email.validity.valid || !password.validity.valid){
-                    isValid = false;
-                }
-
-                if(password.value != cpassword.value){
-                    isValid = false;
-                    console.log('invalid password')
-                }
-
-                if(!isValid){
-                    btn.setAttribute('disabled', true)
-                }
-                else{
-                    btn.removeAttribute('disabled');
-                }
-            })
-        });
-            e.preventDefault();
+  <script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("password").value;
+        var cpassword = document.getElementById("cpassword").value;
+        if (password != cpassword) {
+            alert("Passwords do not match.");
+            return false;
         }
-
-        
-        
-    </script>
+        return true;
+    }
+</script>
 
 </body>
 </html>

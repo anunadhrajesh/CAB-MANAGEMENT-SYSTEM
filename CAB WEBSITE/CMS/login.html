@@ -26,7 +26,7 @@
         <!-- Navbar brand -->
         <a class="navbar-brand mt-2 mt-lg-0" href="#">
           <img
-            src=""
+            src="css/download.png"
             height="15"
             alt="CMS Logo"
             loading="lazy"
@@ -89,14 +89,14 @@
         <div class="dropdown">
           <a
             class="dropdown-toggle d-flex align-items-center hidden-arrow"
-            href="#"
+            href="css/download.png"
             id="navbarDropdownMenuAvatar"
             role="button"
             data-mdb-toggle="dropdown"
             aria-expanded="false"
           >
             <img
-              src=""
+              src="css/download.png"
               class="rounded-circle"
               height="25"
               alt="Black and White Portrait of a Man"
@@ -138,7 +138,7 @@
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5">
           <img src="css/download.png"
-            class="img-fluid" alt="Sample image" style="margin-left: 13%;">
+            class="img-fluid" alt="Sample image" style="margin-left: 13%; margin-bottom: 45%;">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           <form>
@@ -171,7 +171,7 @@
   
             <div class="text-center text-lg-start mt-4 pt-2">
                 <div class="alert-danger" id="error-messages"></div>
-                <button type="submit" class="btn btn-warning col-md-12" onclick="return validate();">Login</button>
+                <a href="home.html"><button type="submit" class="btn btn-warning col-md-12" onclick="return validate();">Login</button></a>
               <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="register.html"
                   class="link-danger">Register</a></p>
             </div>
@@ -271,10 +271,12 @@ integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6
       {
           error.innerHTML = 'Please enter a valid email';
           return false;
+          error.style.color = "red";
       }
       if(!password.validity.valid){
           error.innerHTML = 'Please enter a valid password';
           return false;
+          error.style.color = "red";
       }
       e.preventDefault();
   }
