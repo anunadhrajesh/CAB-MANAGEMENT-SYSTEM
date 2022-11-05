@@ -21,12 +21,12 @@ mobile int not null,
 address varchar(100),
 dob date not null);
 
-create table rider(
-rider_id int primary key auto_increment,
-rider_name varchar(50) not null,
-rider_address varchar(150) not null,
+create table driver(
+driver_id int primary key auto_increment,
+driver_name varchar(50) not null,
+driver_address varchar(150) not null,
 cab_no int,
-constraint FK_rider_cab_number foreign key
+constraint FK_driver_cab_number foreign key
 (cab_no) references cab(cab_no ) on delete set null,
 cab_type varchar(50) not null);
 
