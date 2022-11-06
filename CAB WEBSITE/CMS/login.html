@@ -278,6 +278,10 @@ integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6
           return false;
           error.style.color = "red";
       }
+      if(password.validity.valid)
+      {
+        window.location.href = "";
+      }
       e.preventDefault();
   }
 </script>
